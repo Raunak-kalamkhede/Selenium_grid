@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-repo/project.git'
+                git 'https://github.com/https://github.com/Raunak-kalamkhede/Selenium_grid.git/project.git'
             }
         }
 
