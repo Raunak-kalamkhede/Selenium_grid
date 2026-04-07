@@ -1,9 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: runners.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 206.3 s <<< FAILURE! -- in runners.TestRunner
-runners.TestRunner.runScenario["Verify login page title", "Login Test"](1) -- Time elapsed: 66.80 s <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
-	at stepDefinitions.LoginSteps.navigateTo(LoginSteps.java:20)
-	at ✽.user navigates to "https://example.com"(file:///C:/Users/RAUNAK/Downloads/Capgemini%20Java/MCP/Extent_report/demo/src/test/resources/features/login.feature:5)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.630 s -- in runners.TestRunner

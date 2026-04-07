@@ -11,10 +11,11 @@ public class DriverFactory {
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     public static WebDriver initDriver() {
+        System.out.println("Connecting to Grid...");
         try {
             ChromeOptions options = new ChromeOptions();
             driver.set(new RemoteWebDriver(
-                    new URL("http://172.31.26.236:4444/wd/hub"),
+                    new URL("http://192.168.137.130:4444/wd/hub"),
                     options
             ));
         } catch (Exception e) {
@@ -28,7 +29,9 @@ public class DriverFactory {
     }
 
     public static void quitDriver() {
+        if (getDriver() != null) {
         getDriver().quit();
         driver.remove();
+    }
     }
 }
